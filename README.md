@@ -1,13 +1,13 @@
 # Node_Mailer
 
-Node_Mailer is a Node.js application that facilitates sending One-Time Passwords (OTPs) and emails using templates. It utilizes Express.js for the server framework and Nodemailer for sending emails.
+Node_Mailer is a Node.js application that facilitates sending One-Time Passwords (OTPs) and templated emails. It utilizes Express.js for the server framework and Nodemailer for sending emails.
 
 ## Features
 
-- Send OTP to users for verification
-- Verify OTPs
-- Send templated emails with dynamic content
-- Handle concurrent email sending with a worker pool
+- Send OTP to users for verification.
+- Verify OTPs.
+- Send templated emails with dynamic content.
+- Handle concurrent email sending with a worker pool.
 
 ## Technologies Used
 
@@ -32,3 +32,12 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/Node_Mailer.git
    cd Node_Mailer
+
+2. Install the necessary dependencies:
+   ```bash
+   npm install
+
+3. Set up your Gmail account for Nodemailer:
+
+   - Allow less secure apps or set up an App Password if you have 2FA enabled.
+   - Update your email and password in the sendMail function in main.go or the respective Node.js file.
