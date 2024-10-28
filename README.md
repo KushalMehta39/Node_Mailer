@@ -1,7 +1,5 @@
 # Node_Mailer
 
-# Node_Mailer
-
 Node_Mailer is a Node.js application that facilitates sending One-Time Passwords (OTPs) and emails using templates. It utilizes Express.js for the server framework and Nodemailer for sending emails.
 
 ## Features
