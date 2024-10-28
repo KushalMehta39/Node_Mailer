@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        /* General mobile styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                padding: 10px !important;
+            }
+            .content {
+                font-size: 14px !important;
+            }
+            .header {
+                font-size: 20px !important;
+            }
+            .footer {
+                font-size: 11px !important;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #071928; background-color: #f4f4f4; margin: 0; padding: 0;">
+    <div class="container" style="width: 100%; max-width: 600px; margin: 20px auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <div class="header" style="background-color: #007bff; color: #ffffff; padding: 10px 0; text-align: center; font-size: 22px;">
+            OTP Verification
+        </div>
+        <div class="content" style="padding: 20px; font-size: 16px; color: #333;">
+            <p>Dear <strong>{{customerName}}</strong>,</p>
+            <p>Your OTP for verification is <strong>{{otp}}</strong>.</p>
+            <p>Please enter this OTP in the designated field on our portal to complete the verification process. This OTP is valid for the next <strong>5 minutes</strong>.</p>
+            <p>If you did not request this OTP, please ignore this email. Your account remains secure.</p>
+            <p>Thank you for using our services!</p>
+            <p>If you have any questions or need assistance, feel free to contact our support team.</p>
+        </div>
+        <div class="footer" style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
+            Best regards, <br>
+            {{companyName}} <br>
+            {{contactInfo}} <br>
+            {{websiteURL}} <br><br>
+            <small style="color: #999;">&copy; {{currentYear}} {{companyName}}. All rights reserved.</small>
+        </div>
+    </div>
+</body>
+</html>
