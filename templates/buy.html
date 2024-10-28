@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Request Approved</title>
+    <style>
+        /* General mobile styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                padding: 10px !important;
+            }
+            .content {
+                font-size: 14px !important;
+            }
+            .header {
+                font-size: 20px !important;
+            }
+            .footer {
+                font-size: 11px !important;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; margin: 0; padding: 0;">
+    <div class="container" style="width: 100%; max-width: 600px; margin: 20px auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <div class="header" style="background-color: #057DCD; color: #ffffff; padding: 10px 0; text-align: center; font-size: 22px;">
+            Buy Request Approved
+        </div>
+        <div class="content" style="padding: 20px; font-size: 16px; color: #071928;">
+            <p>Dear <strong>{{customerName}}</strong>,</p>
+            <p>We are pleased to inform you that your buy request for <strong>{{shareName}} shares</strong> of <strong>{{lotQty}} lot(s)</strong> (Lead ID: <strong>{{leadId}}</strong>) created on <strong>{{leadCreationDate}}</strong> has been approved.</p>
+            <p>Kindly go to your cart and complete the payment to move forward with the transaction. Additionally, please upload a <strong>screenshot of the payment</strong> through the cart for our verification.</p>
+            <p>Thank you for using our portal, and we appreciate your trust in us!</p>
+            <p>If you have any questions or need assistance, feel free to contact our support team.</p>
+        </div>
+        <div class="footer" style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
+            Best regards, <br>
+            {{companyName}} <br>
+            {{contactInfo}} <br>
+            {{websiteUrl}} <br><br>
+            <small style="color: #999;">&copy; {{currentYear}} {{companyName}}. All rights reserved.</small>
+        </div>
+    </div>
+</body>
+</html>
