@@ -220,7 +220,7 @@ func sendMail(to, subject, body string) error {
 	m.SetBody("text/html", body)
 
 	// Set up the SMTP server configuration
-	d := gomail.NewDialer("smtp.gmail.com", 587, "kushalmehta0309@gmail.com", "jswq tqlr qujs jobi")
+	d := gomail.NewDialer("smtp.gmail.com", 587, "kushalmehta0309@gmail.com", "zzzz zzzz zzzz zzzz")
 
 	// Send the email
 	return d.DialAndSend(m)
